@@ -5,14 +5,19 @@ interface User {
   // 다른 속성들도 필요한 경우 여기에 추가
 }
 
-const index = ({ user }: { user: User }) => {
+const Users = ({ user }: { user: User }) => {
   const username = user && user.name;
   return <div>{username}</div>;
 };
 
-export const getServerSideProps = async () => {
+export const getServerSideProps = async ({
+  query,
+}: {
+  query: { name: string };
+}) => {
+  const { name } = query;
   try {
-    const res = await fetch("https://api.github.com/users/krapli441");
+    const res = await fetch(`https://api.github.com/users/${name}`);
     if (res.status === 200) {
       const user = await res.json();
       return { props: { user } };
@@ -23,3 +28,5 @@ export const getServerSideProps = async () => {
     return { props: {} };
   }
 };
+
+export default Users;
