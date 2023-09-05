@@ -10,7 +10,10 @@ export default function Home() {
   return (
     <main>
       {/* <input value={name} onChange={(e) => setName(e.target.value)} /> */}
-      <input value={username} onChange={(e) => setUsername(e.target.value)} />
+      <label>
+        username
+        <input value={username} onChange={(e) => setUsername(e.target.value)} />
+      </label>
       <p>{username} 검색하기</p>
       <Link href={`/subpages/${username}`}>검색하기</Link>
       {/* <button type="button" onClick={() => router.push(`/subpages/${name}`)}>
