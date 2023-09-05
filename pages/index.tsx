@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  const [name, setName] = useState("");
+  const router = useRouter();
+
   return (
     <main>
+      <div>
+        <button type="button" onClick={() => router.push("/subpages/blahblah")}>
+          blah로 이동하기
+        </button>
+      </div>
+      <input value={name} onChange={(e) => setName(e.target.value)} />
+      <button type="button" onClick={() => router.push(`/subpages/${name}`)}>
+        {name}으로 이동하기
+      </button>
       <div>
         <h1>hello next.js</h1>
         <Link href="/about">move to index page</Link>
