@@ -5,7 +5,9 @@ export default function Home() {
     <main>
       <div>
         <h1>hello next.js</h1>
-        <Link href="/about">move to about page</Link>
+        <Link href="/first">move to first page</Link>
+        <Link href="/second">move to second page</Link>
+        <Link href="/third">move to third page</Link>
       </div>
     </main>
   );
