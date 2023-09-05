@@ -2,17 +2,13 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
+
 export default function Home() {
   const [name, setName] = useState("");
   const router = useRouter();
 
   return (
     <main>
-      <div>
-        <button type="button" onClick={() => router.push("/subpages/blahblah")}>
-          blah로 이동하기
-        </button>
-      </div>
       <input value={name} onChange={(e) => setName(e.target.value)} />
       <button type="button" onClick={() => router.push(`/subpages/${name}`)}>
         {name}으로 이동하기
@@ -23,6 +19,7 @@ export default function Home() {
         <Link href="/projects">move to about page</Link>
         <Link href="/subpages/blahblah">move to info page</Link>
       </div>
+      <div></div>
     </main>
   );
 }
