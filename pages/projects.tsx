@@ -5,9 +5,9 @@ export default function Home() {
   return (
     <main>
       <div>
-        <h1>hello next.js</h1>
-        <Link href="/first">move to index page</Link>
-        <Link href="/about">move to about page</Link>
+        <h1>projects</h1>
+        <h2>blah blah..</h2>
+        <Link href="/">move to main page</Link>
       </div>
     </main>
   );
