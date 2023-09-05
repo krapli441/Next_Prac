@@ -1,9 +1,10 @@
-import React from "react";
+import Link from "next/link";
 
-export default function FirstPage() {
+export default function Index() {
   return (
     <div>
-      <h1>First Page</h1>
+      <h1>Index</h1>
+      <h2>hello guys.</h2>
     </div>
   );
 }
