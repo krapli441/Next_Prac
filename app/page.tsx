@@ -1,23 +1,28 @@
-// @react/client
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <>
+    <div className="flex flex-col justify-center items-center h-screen">
       <div>
-        <p>imnotkrapli</p>
+        <p className="text-2xl">imnotkrapli</p>
       </div>
       <div>
         <Link href="/search">
-          <button>검색 이동</button>
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            github 검색
+          </button>
         </Link>
         <Link href="/about">
-          <button>about imnotkrapli</button>
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            about imnotkrapli
+          </button>
         </Link>{" "}
         <Link href="/services">
-          <button>제작된 서비스들</button>
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            제작된 서비스들
+          </button>
         </Link>
       </div>
-    </>
+    </div>
   );
 }
