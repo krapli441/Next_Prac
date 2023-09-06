@@ -1,4 +1,4 @@
-
+import { metadata } from "./layout";
 
 export default function Header() {
   return (
@@ -7,4 +7,3 @@ export default function Header() {
     </>
   );
 }
-
