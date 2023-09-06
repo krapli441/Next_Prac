@@ -6,7 +6,7 @@ export default function Home() {
       <div>
         <p className="text-2xl">imnotkrapli</p>
       </div>
-      <div>
+      <div className="flex gap-3">
         <Link href="/search">
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             github 검색
