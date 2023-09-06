@@ -2,11 +2,18 @@ import fetch from "isomorphic-unfetch";
 
 interface User {
   name: string;
+  avatar_url: string;
 }
 
 const Users = ({ user }: { user: User }) => {
   const username = user && user.name;
-  return <div>{username}</div>;
+  const avatar = user && user.avatar_url;
+  return (
+    <div>
+      {username}
+      <img src={avatar} alt={username} />
+    </div>
+  );
 };
 
 export const getServerSideProps = async ({
