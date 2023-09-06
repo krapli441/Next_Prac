@@ -9,10 +9,12 @@ const Users = ({ user }: { user: User }) => {
   const username = user && user.name;
   const avatar = user && user.avatar_url;
   return (
-    <div>
-      {username}
-      <img src={avatar} alt={username} />
-    </div>
+    <>
+      <div>
+        <img src={avatar} alt={username} />
+      </div>
+      <div>{username}</div>
+    </>
   );
 };
 
