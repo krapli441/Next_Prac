@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <>
       <div className="header-wrapper">
-        <p>imnotkrapli</p>
+        <p>header header</p>
         <Link href={"/about"}>about</Link>
         <Link href={"/services"}>services</Link>
       </div>

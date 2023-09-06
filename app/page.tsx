@@ -3,7 +3,10 @@ import Header from "./header";
 export default function Home() {
   return (
     <>
-      <Header />
+
+      <div>
+        <p>henlo</p>
+      </div>
     </>
   );
 }
