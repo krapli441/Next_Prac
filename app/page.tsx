@@ -5,7 +5,6 @@ export default function Home() {
     <>
       <div>
         <p>imnotkrapli</p>
-        <Link href="/search">검색하기</Link>
       </div>
     </>
   );

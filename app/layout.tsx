@@ -1,12 +1,11 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import Header from "./components/header";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "previewpageg",
+  title: "previewpage",
   description: "introducing testpilot",
 };
 
