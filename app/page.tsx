@@ -5,7 +5,12 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="flex flex-col justify-center items-center h-screen h-fit"></div>
+      <div className="flex justify-around items-center h-screen h-4/5">
+        <div className="w-64 h-64 bg-red-500"></div>
+        <div className="w-64 h-64 bg-red-500"></div>
+        <div className="w-64 h-64 bg-red-500"></div>
+        <div className="w-64 h-64 bg-red-500"></div>
+      </div>
     </>
   );
 }

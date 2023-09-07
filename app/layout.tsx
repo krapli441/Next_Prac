@@ -19,7 +19,6 @@ export default function RootLayout({
     <html lang="en">
       <body
         style={{
-          display: "flex",
           width: "100vw",
           height: "100vh",
         }}
