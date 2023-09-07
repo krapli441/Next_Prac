@@ -6,7 +6,7 @@ function Header() {
   return (
     <header className="flex w-full h-32 text-center items-center header-text">
       <div className="w-2/6">
-        <p className="text-5xl font-mono">IMNOTKRAPLI</p>
+        <p className="text-5xl font-mono">SOMETHING SHIT</p>
       </div>
       <div className="w-4/6">
         <ul className="list-none flex gap-20 items-center mt-4 text-2xl">
