@@ -6,7 +6,13 @@ function Header() {
     <header>
       <div
         className="title"
-        style={{ width: "100vw", height: "10vh", backgroundColor: "gray" }}
+        style={{
+          display: "flex",
+          alignItems: "center",
+          width: "100vw",
+          height: "10vh",
+          backgroundColor: "gray",
+        }}
       >
         <p>PREVIEWPAGE</p>
       </div>

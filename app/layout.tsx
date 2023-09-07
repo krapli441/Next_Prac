@@ -18,7 +18,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        style={{ width: "100vw", height: "100vh" }}
+        style={{
+          display: "flex",
+          width: "100vw",
+          height: "100vh",
+        }}
         className={inter.className}
       >
         {children}
