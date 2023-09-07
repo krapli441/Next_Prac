@@ -1,8 +1,13 @@
 import Link from "next/link";
+import Header from "@/components/header";
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-center items-center h-screen">
+    <>
+      <Header />
+      <div className="flex flex-col justify-center items-center h-screen h-fit">
+        {/* <div>
+      </div>
       <div>
         <p className="text-2xl">imnotkrapli</p>
       </div>
@@ -22,7 +27,8 @@ export default function Home() {
             제작된 서비스들
           </button>
         </Link>
+      </div> */}
       </div>
-    </div>
+    </>
   );
 }
