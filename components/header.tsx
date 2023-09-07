@@ -5,7 +5,7 @@ function Header() {
   return (
     <header>
       <div
-        className="title"
+        className="headerContainer"
         style={{
           display: "flex",
           alignItems: "center",
@@ -14,7 +14,21 @@ function Header() {
           backgroundColor: "gray",
         }}
       >
-        <p>PREVIEWPAGE</p>
+        <div className="title">
+          <p>PREVIEWPAGE</p>
+        </div>
+        <div className="menus">
+          <nav className="navigation-link">
+            <ul style={{ listStyle: "none", display: "flex", gap: "20px" }}>
+              <li>
+                <Link href="/">ABOUT</Link>
+              </li>
+              <li>
+                <Link href="/">SERVICES</Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
   );
