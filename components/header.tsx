@@ -11,10 +11,10 @@ function Header() {
       <div className="w-4/6">
         <ul className="list-none flex gap-20 items-center mt-4 text-2xl">
           <li>
-            <Link href="/">ABOUT</Link>
+            <Link href="/about">ABOUT</Link>
           </li>
           <li>
-            <Link href="/">SERVICE</Link>
+            <Link href="/services">SERVICE</Link>
           </li>
         </ul>
       </div>
