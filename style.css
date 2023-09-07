@@ -1,0 +1,19 @@
+/* styles.css */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url("https://fonts.cdnfonts.com/css/nats");
+
+/* tailwind.css */
+@font-face {
+  font-family: "NATS";
+  src: url("/fonts/NATS.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 폰트를 적용할 클래스 지정 */
+.font-custom {
+  font-family: "NATS", sans-serif;
+}
