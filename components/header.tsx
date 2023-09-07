@@ -8,16 +8,24 @@ function Header() {
         className="headerContainer"
         style={{
           display: "flex",
-          alignItems: "center",
+          alignItems: "baseline",
           width: "100vw",
           height: "10vh",
           backgroundColor: "gray",
         }}
       >
-        <div className="title">
+        <div
+          className="title"
+          style={{
+            width: "20vw",
+            textAlign: "center",
+            fontSize: "2rem",
+            marginTop: "2vh",
+          }}
+        >
           <p>PREVIEWPAGE</p>
         </div>
-        <div className="menus">
+        <div className="menus" style={{ width: "80vw" }}>
           <nav className="navigation-link">
             <ul style={{ listStyle: "none", display: "flex", gap: "20px" }}>
               <li>
